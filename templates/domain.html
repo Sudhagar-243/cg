@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Domain</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .option {
+        margin: 10px;
+    }
+    .option input[type="radio"] {
+        display: none;
+    }
+    .option label {
+        display: block;
+        padding: 10px 20px;
+        background-color: #ddd;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .option input[type="radio"]:checked + label {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+    .option label:hover {
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Choose Your Domain</h1>
+    <div class="options">
+        <div class="option">
+            <input type="radio" id="eee" name="domain" value="EEE" onclick="redirectToPage('eee')">
+            <label for="eee">EEE</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="cse" name="domain" value="CSE" onclick="redirectToPage('cse')">
+            <label for="cse">CSE</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="mech" name="domain" value="MECH" onclick="redirectToPage('mech')">
+            <label for="mech">MECH</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="civil" name="domain" value="CIVIL" onclick="redirectToPage('civil')">
+            <label for="civil">CIVIL</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="ece" name="domain" value="ECE" onclick="redirectToPage('ece')">
+            <label for="ece">ECE</label>
+        </div>
+    </div>
+</div>
+
+<script>
+    function redirectToPage(pageName) {
+        window.location.href = pageName;
+    }
+</script>
+
+</body>
+</html>

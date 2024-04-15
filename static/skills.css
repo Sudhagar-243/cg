@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+
+/* CSS Reset */
+body {
+    background-color: rgb(208, 233, 197);
+}
+body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation Bar Styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 10%;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Course Display Styles */
+        .course-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+        }
+
+        /*  */
+        
+
+        .course-1 {
+            background-color: #cff0b0;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .course-2 {
+            background-color: #d8c2fc;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .course-3 {
+            background-color: #c2c6fc;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .course-4 {
+            background-color: #fcc2e9;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .course-5 {
+            background-color: #f1fcb1;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .course-6 {
+            background-color: #c2f0fc;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        h1 {
+            margin-left: 40%;
+        }
+        .course h2 {
+            margin-top: 0px;
+        }
+
+        .course p {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }

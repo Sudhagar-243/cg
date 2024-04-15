@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+		<title>Career Guidance</title>
+
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+		
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: rgb(120, 70, 167); top: 0;">
+			<div class="container">
+
+				<div class="navbar-header">
+					
+					<div class="navbar-brand">
+						<a class="logo" href="">Career Guidance</a>
+					</div>
+					
+					<button class="navbar-toggle">
+						<span></span>
+					</button>
+					
+				</div>
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="http://127.0.0.1:5000/">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span>&#11167;</span></i></a>
+                            <div class="dropdown-content">
+								<a href="">Career Prediction</a>
+                                <a href="">Courses</a>
+								<a href="">Knowledge Network</a>
+								
+                            </div>
+                        </li>
+						<li><a href="">SKILLS</a></li>
+						<li><a href="">FEATURES</a></li>
+						<li><a href="" >Log out</a></li>
+						
+                        
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+		
+
+
+    <link href=" {{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/range.scss') }}" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+
+    <link href="{{ url_for('static', filename='vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Rate Yourself...!!!</h2>
+				
+                </div>
+				
+				
+                <div class="card-body">
+                    
+					<form  method="POST", action="{{url_for('result_eee')}}">
+						
+						<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Power Systems Analysis</label>
+							<div class="col-sm-9">
+							<select class="form-select form-control" required aria-label="select example" name="rate_Power Systems Analysis">
+								  <option value="">Choose option</option>
+								 <option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+								</select>
+							
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Digital Systems Design</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Digital Systems Design" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label"> Control Systems Engineering</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Control Systems Engineering" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Electric Power Grid Security</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Electric Power Grid Security" >
+							        <option value="" >Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Communication Systems</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Communication Systems" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Embedded Systems Development</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Embedded Systems Development" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Microcontroller Programming</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Microcontroller Programming" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Project Management in Electrical Engineering</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Project Management in Electrical Engineering" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Power System Protection and Forensics</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Power System Protection and Forensics" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Technical Report Writing for Electrical Engineers</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Technical Report Writing for Electrical Engineers" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Machine Learning Applications in Electrical Engineering</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Machine Learning Applications in Electrical Engineering" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Software Engineering</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Software Engineering" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Business Analysis</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Business Analysis" >
+							        <option disabled= "disabled" selected="selected">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Communication skills</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Communication skills" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3 col-form-label">Electronics</label>
+							<div class="col-sm-9">
+							 <select class="form-select form-control" required aria-label="select example" name="rate_Electronics" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+				</div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Troubleshooting skills</label>
+							<div class="col-sm-9">
+							 <select  class="form-control" name="rate_Troubleshooting skills" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+							
+                </div>
+				<div class="form-group row">
+							<label  class="col-sm-3  col-form-label">Digital Signal Processing for Multimedia Applications</label>
+							<div class="col-sm-9">
+							 <select  class="form-control" name="rate" >
+							        <option value="">Choose option</option>
+									<option value="1">Not Interested</option>
+									<option value="2">Poor</option>
+									<option value="3">Beginner</option>
+									<option value="5">Average</option>
+									<option value="6">Intermediate</option>
+									<option value="7">Excellent</option>
+									<option value="9">Professional</option>
+							 </select>
+						    </div>
+							
+                </div>
+                <center><button class="btn btn--radius-2 btn--red" type="submit" >Discover Yourself!</button></center>
+                </div>						
+				</div>
+</div>		
+
+</form>		
+			
+    
+		
+
+</body>
+
+</html>

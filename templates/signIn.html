@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="{{ url_for('static', filename='signCSS.css') }}" rel="stylesheet" media="all">
+
+</head>
+
+<body class="color1">
+    <div class="section-1">
+        <div class="wrapper">
+            <h1>Sign Up</h1>
+            <form action="/submit" method="post">
+                <input name="email" type="email" placeholder="Gmail address">
+                <input name="username"type="text" placeholder="username">
+                <input name="password"type="password" placeholder="Password">
+                <div class="terms">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"> I agree to these <a href="#">Terms & Conditions</a></label>
+                </div>
+                <div class="member">
+                    Already a member ? <a href="signUp">SignIn Here</a>
+                </div>
+                <input type='submit'>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

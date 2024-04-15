@@ -1,0 +1,101 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+.navbar{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  
+    font-weight: 500;
+    background-color:rgb(152, 40, 204);
+    color: white;
+    margin-right: 0px;
+}
+
+
+.logo {
+    margin-right:600px;
+    margin-left: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: black;
+    color: white;
+}
+
+.menu :hover{
+    color: black;
+}
+.navbar a{
+    color: white;
+}
+
+.signup_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn{
+    padding:10px 20px;
+    border: 1px solid black;
+    font-weight: 500;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.hero{
+    width: 100%;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+}
+.hero_contain_part1 h1{
+    font-size: 50px;
+    line-height: 90px;
+    color: #353f4f;
+}
+.hero_contain_part1 h3,
+.hero_contain_part1 h5{
+    margin-top: 30px;
+    color: #868998;
+    font-weight: 500;
+}
+
+.hero_contain_part1 button{
+    padding: 10px 20px;
+
+}
+
+.hero_btn{
+    margin-top: 40px;
+}
+
+.hero_contain_part2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_contain_part2 img{
+    width: 90%;
+    min-width: 350px;
+}
+/* body{
+    background-color: green;
+    color: white;
+} */
+
